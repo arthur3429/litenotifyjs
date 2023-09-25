@@ -17,14 +17,15 @@
         <link rel="stylesheet" href="../dist/litenotify.css" />
     </head>
     <body>
+
         <script src="../dist/litenotify.js"></script>
         <script>
-            produce_litenotify({
-                msg: "Você deseja ser redirecionado para o google?",
-                type: "confirm",
-                time: 100000000000000000,
+            litenotify({
+                msg: "You want to be redirected to google.com?",
+                type: "error",
+                time: 10000,
                 callback: () => {
-                    window.location = "https://google.com";
+                    window.location = 'https://google.com';
                 },
             });
         </script>
